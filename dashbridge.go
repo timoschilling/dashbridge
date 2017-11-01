@@ -72,12 +72,7 @@ func main() {
     button, err := FindButton(ethernetPacket.SrcMAC.String(), switches)
     if err {
       log.Printf("Found %s\n", button.Info.Name.GetValue())
-      log.Println(button.Switch.On.GetValue())
-      if button.Switch.On.GetValue() {
-        button.Switch.On.SetValue(false)
-      } else {
-        button.Switch.On.SetValue(true)
-      }
+      button.Switch.On.SetValue(!button.Switch.On.GetValue())
     } else {
       log.Printf("Unable to find %s\n", ethernetPacket.SrcMAC.String())
     }
