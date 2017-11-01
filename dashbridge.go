@@ -68,7 +68,7 @@ func main() {
   for packet := range packetSource.Packets() {
     ethernetLayer := packet.Layer(layers.LayerTypeEthernet)
     ethernetPacket, _ := ethernetLayer.(*layers.Ethernet)
-    log.Printf("Received button press MAC[%v]", ethernetPacket.SrcMAC)
+
     button, err := FindButton(ethernetPacket.SrcMAC.String(), switches)
     if err {
       log.Printf("Found %s\n", button.Info.Name.GetValue())
