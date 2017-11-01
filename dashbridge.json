@@ -1,0 +1,41 @@
+{
+  "pin": "12312312",
+  "buttons": [
+    {
+      "name": "avery",
+      "mac": "50:f5:da:9c:5b:41"
+    },
+    {
+      "name": "durex2",
+      "mac": "ac:63:be:04:39:c0"
+    },
+    {
+      "name": "durex",
+      "mac": "50:f5:da:cd:19:73"
+    },
+    {
+      "name": "finish",
+      "mac": "ac:63:be:c5:3a:df"
+    },
+    {
+      "name": "finish2",
+      "mac": "ac:63:be:f4:a6:52"
+    },
+    {
+      "name": "nerf",
+      "mac": "ac:63:be:fc:f6:8b"
+    },
+    {
+      "name": "nivea",
+      "mac": "ac:63:be:64:9d:3b"
+    },
+    {
+      "name": "sagrotan",
+      "mac": "ac:63:be:4c:e9:5f"
+    },
+    {
+      "name": "somat",
+      "mac": "34:d2:70:5f:af:51"
+    }
+  ]
+}
