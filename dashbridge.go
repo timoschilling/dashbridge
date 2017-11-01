@@ -2,6 +2,7 @@ package main
 
 import (
   "log"
+  "fmt"
   "github.com/brutella/hc"
   "github.com/brutella/hc/accessory"
   "github.com/google/gopacket"
@@ -28,7 +29,7 @@ func main() {
       Name:         button.Name,
       Manufacturer: "Amazon",
       SerialNumber: button.Mac,
-      Model:        "Dash Button",
+      Model:        fmt.Sprintf("Dash Button %s", button.Name),
     })
     switches = append(switches, switch_accessory)
     accessories = append(accessories, switch_accessory.Accessory)
