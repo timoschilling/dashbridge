@@ -1,0 +1,10 @@
+{
+  "pin": "12312312",
+  "interface": "en0",
+  "buttons": [
+    {
+      "name": "nerf",
+      "mac": "ac:63:be:f4:f6:73"
+    }
+  ]
+}
