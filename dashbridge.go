@@ -48,9 +48,9 @@ func main() {
     t.Start()
   }()
 
-  log.Printf("Starting up on interface[%v]...", "en0")
+  log.Printf("Starting up on interface[%v]...", config.Interface)
 
-  h, err := pcap.OpenLive("en0", 65536, true, pcap.BlockForever)
+  h, err := pcap.OpenLive(config.Interface, 65536, true, pcap.BlockForever)
 
   if err != nil || h == nil {
     log.Fatalf("Error opening interface: %s\nPerhaps you need to run as root?\n", err)

@@ -8,6 +8,7 @@ import (
 
 type Config struct {
   Pin       string   `json:"pin"`
+  Interface string   `json:"interface"`
   Buttons   []Button `json:"buttons"`
 }
 
